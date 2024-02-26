@@ -17,6 +17,7 @@ import java.util.Optional;
 public class NavesEspacialesController {
     @Autowired
     private NaveEspacialService naveEspacialService;
+
     @GetMapping
     public List<NaveEspacial> consultaTodasLasNaves() {
         return (List<NaveEspacial>) naveEspacialService.obtenerNavesConPaginacion(0,10);

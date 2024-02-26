@@ -13,7 +13,6 @@ public interface NaveEspacialRepository extends JpaRepository<NaveEspacial, Long
     Page<NaveEspacial> findAll(Pageable pageable);
     Optional<NaveEspacial> findById(Long id);
     List<NaveEspacial> findByNombreContaining(String nombre);
-
     NaveEspacial save(NaveEspacial nuevaNave);
     void deleteById(Long id);
 
